@@ -1,11 +1,15 @@
 # Boston house prices dataset
 
-The dataset can be found in `housing.csv`. It contains information about .... The goal is to predict .... The attributes are:
-- ...
+The dataset can be found in `housing.csv`. It contains information about house values for census tracts in Boston, Massachusetts from 1978 (variable MEDV = median value of owner-occupied houses). The goal is to predict the house values from the other attributes, which are:
+- RM: average number of rooms among houses in neighborhood
+- LSTAT: percentage of Boston homeowners with greater net worth than homeowners in neighborhood
+- PTRATIO: ratio of students to teachers in primary and secondary schools in neighborhood
 
-Check out `boston_housing.ipynb` to see how it's done.
+The data has been cleansed already by Udacity (see notebook for details, 489/506 rows left, 3/14 attributes used). The original dataset is from [here](https://archive.ics.uci.edu/ml/datasets/Housing).
 
-You can see the latest version at the [GitHub page](https://dominicbreuker.github.io/boston_housing/)
+Check out `boston_housing.ipynb` for a solution to this task.
+
+You can see the solution at the [GitHub page](https://dominicbreuker.github.io/boston_housing/)
 
 ## Getting started
 
@@ -17,12 +21,12 @@ If you ever add new packages, keep `requirements.txt` updated. Run `pip3 install
 
 ### Running jupyter notebook
 
-Run `jupyter notebook Titanic_Survival_Exploration.ipynb` to work on the dataset.
+Run `jupyter notebook boston_housing.ipynb` to work on the dataset.
 
 
 ### Troubleshooting
 
-I am using OSX with python 3.5 and pandas 0.18.1. On importing pandas, I get a "ValueError: unknown locale: UTF-8".
+I am using OSX with python 3.5.1 and pandas 0.18.1. On importing pandas, I get a "ValueError: unknown locale: UTF-8".
 
 Run the following code before starting the notebook to solve the issue.
 ```bash
